@@ -1,0 +1,29 @@
+# File Aliases
+alias ll="ls -l"
+alias la="ls -CF -A"
+alias l="ls -CF"
+
+# Python Aliases
+alias python=python3
+alias pip=pip3
+
+# Navigation Aliases
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias home="cd ~"
+alias h="cd ~"
+alias dev="cd ~dev"
+alias dls="cd ~downloads"
+
+# Git Aliases
+alias branch="git rev-parse --abbrev-ref HEAD --"
+alias pull-subdirs="ls | xargs -I{} git -C {} pull"
+alias push-subdirs="ls | xargs -I{} git -C {} push"
+
+alias gs="git status -s "
+alias ga="git add "
+alias gaa="git add ."
+alias gcm="git commit -m "
+alias gd="git diff "

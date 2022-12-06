@@ -4,7 +4,7 @@ ZSH_THEME="agnoster"
 zstyle ':omz:update' mode reminder  # enable update reminders
 zstyle ':omz:update' frequency 13
 
-plugins=(git colorize colored-man-pages extract)
+plugins=(git colorize colored-man-pages extract sudo)
 
 source $ZSH/oh-my-zsh.sh
 

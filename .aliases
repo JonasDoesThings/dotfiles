@@ -28,3 +28,6 @@ alias ga="git add "
 alias gaa="git add ."
 alias gcm="git commit -m "
 alias gd="git diff "
+
+# Dev Aliases
+alias yd="yarn dev"

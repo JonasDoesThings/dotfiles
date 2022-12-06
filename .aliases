@@ -2,6 +2,7 @@
 alias ll="ls -l"
 alias la="ls -CF -A"
 alias l="ls -CF"
+alias ldot="ls -d .*"
 
 # Python Aliases
 alias python=python3

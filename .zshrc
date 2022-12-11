@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster-zsh-theme/agnoster"
 zstyle ':omz:update' mode reminder  # enable update reminders
 zstyle ':omz:update' frequency 13
 

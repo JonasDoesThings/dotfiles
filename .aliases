@@ -24,6 +24,7 @@ alias pull-subdirs="ls | xargs -I{} git -C {} pull"
 alias push-subdirs="ls | xargs -I{} git -C {} push"
 
 alias gs="git status -s "
+alias gss="git status"
 alias ga="git add "
 alias gaa="git add ."
 alias gcm="git commit -m "

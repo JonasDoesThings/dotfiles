@@ -11,7 +11,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 zstyle ':omz:update' mode reminder  # enable update reminders
 zstyle ':omz:update' frequency 13
 
-plugins=(git colorize colored-man-pages extract sudo)
+plugins=(git colorize colored-man-pages extract sudo dirhistory)
 
 source $ZSH/oh-my-zsh.sh
 

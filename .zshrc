@@ -28,7 +28,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 hash -d c=/mnt/c
 
 [ -f $ZSH/custom/dirs.zsh ] && source $ZSH/custom/dirs.zsh
-[ -f .aliases ] && source .aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f .aliases ] && source .aliases

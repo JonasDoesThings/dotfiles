@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
+export DOTFILES="$(dirname $(readlink -f ~/.zshrc))"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 zstyle ':omz:update' mode reminder  # enable update reminders
@@ -29,9 +30,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 hash -d c=/mnt/c
 
 [ -f $ZSH/custom/dirs.zsh ] && source $ZSH/custom/dirs.zsh
-[ -d ./local/ ] && source ./local/*.zsh
+for file in $DOTFILES/local/*.zsh; do
+    source "$file"
+done
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[ -f .aliases ] && source .aliases
+[ -f $DOTFILES/.aliases ] && source $DOTFILES/.aliases
+
